@@ -1,0 +1,85 @@
+.wrapperLogin {
+    display: flex;
+    flex: 1
+}
+
+.loginRight {
+    background-color: "white";
+    flex: 40;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.loginRight form .textOpen {
+    font-family: "Lato-Medium";
+    font-size: 15px;
+}
+
+.loginRight form .textEmail {
+    font-family: "Lato-Medium";
+    font-size: 11px;
+    color: #9A9A9A;
+    opacity: 0.8;
+}
+
+.loginRight form .inputEmail {
+    border: 1px solid #DFE0EB;
+    opacity: 0.5;
+    padding: 11px;
+    border-radius: 5.12px;
+    color: #000000;
+    font-size: "Lato-Regular";
+    font-size: 10.4px;
+    outline: none;
+    padding: 11px;
+    width: 92%;
+}
+
+.loginRight form .wrapperFormPassword {
+    display: flex;
+    border: 1px solid #DFE0EB;
+    border-radius: 5.12px;
+    opacity: 0.5;
+    width: 100%;
+    margin-bottom: 44px;
+}
+
+.loginRight form .wrapperFormPassword .inputPassword {
+    width: 100%;
+    border: none;
+    outline: none;
+    padding: 11px;
+}
+.loginRight form .wrapperFormPassword .textForgot{
+    font-family: "Lato-Regular";
+    font-size: 11px;
+    color: #9A9A9A;
+    opacity: 0.8;
+    padding-left: 10px;
+    padding-right: 10px;
+    border-left: 1px solid black;
+    cursor: pointer;
+}
+
+.wrapperIlusLogin {
+    flex: 60;
+    height: 100vh
+}
+
+.ilusImage {
+    width: 100%;
+    height: 100%;
+}
+
+@media screen and (max-width: 756px) {
+    .wrapperIlusLogin {
+        display: none;
+    }
+
+    .loginRight {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+}

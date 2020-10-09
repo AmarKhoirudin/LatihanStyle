@@ -1,0 +1,53 @@
+.wrapperNavbar {
+    display: flex;
+    justify-content: space-between;
+    margin-left: 44px;
+}
+
+.wrapperNavbar .navBarLeft {
+    margin-top: 48px;
+    border: 1px solid #BBC1C8;
+    border-radius: 4px;
+    display: flex;
+    padding-top: 13px;
+    padding-bottom: 13px;
+    padding-right: 15px;
+    padding-left: 15px;
+    width: 36%;
+}
+
+.wrapperNavbar .navBarLeft input {
+    border: none;
+    outline: none;
+    margin-left: 15px;
+    font-size: 14px;
+    font-family: "Lato-Italic";
+    color: #4F5154;
+}
+
+.wrapperNavbar .navBarRight {
+    display: flex;
+    margin-right: 55px;
+    align-items: center;
+    margin-top: 30px;
+}
+
+.wrapperNavbar .navBarRight .navbarRightName {
+    font-size: 15px;
+    font-family: "Lato";
+    font-weight: bold;
+    color: #4F4F4F;
+    display: block;
+}
+
+.wrapperNavbar .navBarRight .navbarRightEmail {
+    font-size: 13px;
+    font-family: "Lato";
+    font-weight: normal;
+    color: #4F4F4F;
+    padding-top: 0;
+}
+
+.wrapperNavbar .navBarRight img {
+    margin-left: 13px;
+}

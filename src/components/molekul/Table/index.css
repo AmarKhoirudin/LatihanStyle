@@ -1,0 +1,35 @@
+table {
+    margin-top: 1.2%;
+}
+
+table thead {
+    font-family: "Lato";
+    font-weight: normal;
+    font-size: 12px;
+    line-height: 14px;
+    color: #979797;
+}
+
+table tbody tr td {
+    padding-top: 15px;
+    font-family: "Lato";
+    font-weight: normal;
+    font-size: 11px;
+    line-height: 13px;
+    color: #3D3D3D;
+}
+
+table tbody tr td:nth-child(5).Success {
+    color: #61C378;
+}
+
+table tbody tr td:nth-child(5).Failed {
+    color: #DA5E5B;
+}
+table tbody tr td:nth-child(5).Progress {
+    color: #41AFFF;
+}
+
+table tbody tr td:nth-child(5) {
+    color: #F3A356;
+}

@@ -1,0 +1,112 @@
+.wrapperHomePage {
+    margin-left: 44px;
+    margin-right: 55px;
+    margin-top: 4%;
+}
+
+.cardHomePage {
+    border-top: 6px solid #ED1260 !important;
+    border: 1px solid #DDDDE4;
+    border-radius: 4px;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-bottom: 20px;
+}
+
+.cardHomePage h4 {
+    font-family: 'Lato';
+    font-weight: bold;
+    color: #312F30;
+    letter-spacing: 0.002em;
+}
+
+.cardHomePage span {
+    font-family: 'Lato';
+    font-weight: 500;
+    font-size: 16px;
+    letter-spacing: 0.002em;
+    color: #312F30;
+}
+
+.cardHomePage span.click {
+    cursor: pointer;
+    color: #ED1260;
+}
+
+.wrapperHomePage .homePageRemaining {
+    margin-top: 48px;
+}
+
+.wrapperHomePage .homePageRemaining .remainingTitle {
+    font-family: "Lato";
+    font-style: normal;
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 22px;
+    color: rgba(0, 0, 0, 0.6);
+}
+
+.wrapperHomePage .wrappperRemaining {
+    display: flex;
+    justify-content: space-between;
+}
+
+/* table */
+
+.wrapperHomePage .wrapperTable {
+    border: 1px solid #DDDDE4;
+    padding-right: 28px;
+    padding-left: 28px;
+    margin-top: 2%;
+    margin-bottom: 10%;
+}
+
+.wrapperHomePage .TableTitle {
+    font-family: "Lato";
+    font-style: normal;
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 17px;
+    color: #ED1260;
+    margin-left: 2%;
+}
+
+.wrapperHomePage .wrapperTable .TitleRight {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-right: 2%;
+}
+
+.wrapperHomePage .wrapperTable .TableSort {
+    font-family: "Lato";
+    font-size: 13px;
+    font-weight: 600;
+    color: #4B506D;
+    text-align: center;
+    padding-left: 10%;
+    cursor: pointer;
+}
+
+.tableScroll::-webkit-scrollbar {
+    width: 6px;
+    /* width of the entire scrollbar */
+}
+
+.tableScroll::-webkit-scrollbar-track {
+    background: rgba(196, 196, 196, 0.44);
+    border-radius: 3.5px;
+    /* color of the tracking area */
+}
+
+.tableScroll::-webkit-scrollbar-thumb {
+    background-color: #ED1260;
+    /* color of the scroll thumb */
+    border-radius: 3.5px;
+}
+
+@media screen and (max-width :756px) {
+    .wrapperHomePage .wrappperRemaining {
+        display: block;
+    }
+}
