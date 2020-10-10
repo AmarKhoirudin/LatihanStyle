@@ -13,7 +13,7 @@ const AuthPage = () => {
         </div>
         <div style={{ flex: 85 }}>
           <NavBar />
-          <Route exact path="/" component={HomePage} />
+          <Route exact path="/home" component={HomePage} />
           <Route path="/smsscheduller" component={SmsSchedullerPage} />
         </div>
       </div>
@@ -25,7 +25,7 @@ const RouterPage = () => {
   return (
     <Router>
       <Switch>
-        <Route path="/login" component={LoginPage} />
+        <Route exact path="/" component={LoginPage} />
         <Route exact component={AuthPage} />
       </Switch>
     </Router>

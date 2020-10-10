@@ -24,7 +24,7 @@ const Login = () => {
             <input type="password" className="inputPassword" placeholder="Input Your Password" />
             <p className="textForgot">Forgot?</p>
           </div>
-          <Link to="/">
+          <Link to="/home">
             <Button titlle="sign in" />
           </Link>
         </form>

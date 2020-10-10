@@ -30,7 +30,7 @@ const Sidebar = () => {
         <img src={LogoOca} className="SideBarLogo" alt="Logo" />
         <div className="wrapperNavlink">
           <NavLink
-          onClick={() => setCheckBox(!checkBox)} to="/" activeClassName="active" className="Navlink" exact onClick={() => setCheckBox(!checkBox)}>
+          onClick={() => setCheckBox(!checkBox)} to="/home" activeClassName="active" className="Navlink" exact onClick={() => setCheckBox(!checkBox)}>
             <img src={HomeIcon} alt="HomeIcon" />
             <p className="textNavlink">Home</p>
           </NavLink>

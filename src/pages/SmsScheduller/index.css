@@ -190,7 +190,7 @@
 
 /* buttonSave */
 .wrapperSmsScheduller .buttonSave{
-  margin-top: 7%;
+  margin-top: 10%;
   margin-bottom: 7%;
   width: 72%;
   display: flex;
@@ -227,5 +227,11 @@
     justify-content: flex-start;
     height: 40px;
   }
-   
+  .wrapperSmsScheduller .buttonSave{
+    width: 100%;
+  }
+  .wrapperSmsScheduller .buttonSave .buttonSavebantuan {
+    width: 100%;
+
+  }
 }
