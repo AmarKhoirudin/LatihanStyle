@@ -14,7 +14,7 @@ const Sidebar = () => {
   const [toggle, setToggle] = useState(false);
   const [checkBox, setCheckBox] = useState(false);
   return (
-    <div>
+    <div className="SideBarWrapper">
       <div className="menu-toogle">
         <input
           type="checkbox"
