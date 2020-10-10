@@ -27,11 +27,13 @@
   font-weight: normal;
   color: #4f5154;
 }
+
 .wrapperInputSms input::placeholder {
   color: #dedede;
 }
 
 /* type */
+
 .wrapperInputType {
   border: 1px solid #bbc1c8;
   width: 27%;
@@ -42,6 +44,7 @@
   display: flex;
   align-items: center;
 }
+
 .wrapperInputType p {
   width: 100%;
   border: none;
@@ -54,6 +57,12 @@
 }
 
 .wrapperInputType img {
-    width: 15px;
-    height: 10px;
+  width: 15px;
+  height: 10px;
+}
+
+@media screen and (max-width: 756px) {
+  .wrapperInputSms, .wrapperInputType {
+    width: 100%
+  }
 }

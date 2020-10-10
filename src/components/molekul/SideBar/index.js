@@ -29,7 +29,8 @@ const Sidebar = () => {
         {/* <div className="fixed"> */}
         <img src={LogoOca} className="SideBarLogo" alt="Logo" />
         <div className="wrapperNavlink">
-          <NavLink to="/" activeClassName="active" className="Navlink" exact>
+          <NavLink
+          onClick={() => setCheckBox(!checkBox)} to="/" activeClassName="active" className="Navlink" exact onClick={() => setCheckBox(!checkBox)}>
             <img src={HomeIcon} alt="HomeIcon" />
             <p className="textNavlink">Home</p>
           </NavLink>
@@ -45,6 +46,7 @@ const Sidebar = () => {
               <div className="SmsDropdown">
                 <img src={NavLinkIcon} alt="HomeIcon" />
                 <NavLink
+                onClick={() => setCheckBox(!checkBox)}
                   to="/broadcast"
                   className="Navlink"
                   activeClassName="active"
@@ -55,6 +57,7 @@ const Sidebar = () => {
               <div className="SmsDropdown">
                 <img src={NavLinkIcon} alt="HomeIcon" />
                 <NavLink
+                onClick={() => setCheckBox(!checkBox)}
                   to="/smsscheduller"
                   className="Navlink"
                   activeClassName="active"

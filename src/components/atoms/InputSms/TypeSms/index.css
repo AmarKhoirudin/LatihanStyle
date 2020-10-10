@@ -21,3 +21,9 @@
     color: #4f5154;
     resize: none;
 }
+
+@media screen and (max-width: 756px) {
+    .TypeSms {
+        width: 100%
+    }
+}
