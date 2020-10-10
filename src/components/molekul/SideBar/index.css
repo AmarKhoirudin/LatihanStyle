@@ -119,7 +119,7 @@ a.Navlink {
 
 /* Ukuran Mobile */
 
-@media screen and (max-width: 576px) {
+@media screen and (max-width: 756px) {
   .menu-toogle {
       display: flex;
   }

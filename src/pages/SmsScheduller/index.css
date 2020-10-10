@@ -13,8 +13,219 @@
   line-height: 18px;
 }
 
+.wrapperSmsScheduller .shceduller {
+  width: 72%;
+}
+
+/* scheduller */
+
+.wrapperSmsScheduller .shceduller .title {
+  font-family: "Lato";
+  font-style: normal;
+  font-weight: bold;
+  line-height: 18px;
+  letter-spacing: 0.002em;
+  font-size: 18px;
+  color: #4F5154;
+}
+
+.wrapperSmsScheduller .shceduller .description {
+  font-family: "Lato";
+  font-style: italic;
+  font-weight: normal;
+  line-height: 18px;
+  letter-spacing: 0.002em;
+  font-size: 14px;
+  color: #BBC1C8;
+}
+
+.wrapperSmsScheduller .shceduller .run {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.wrapperSmsScheduller .shceduller .run p {
+  font-family: "Lato";
+  font-weight: bold;
+  font-size: 14px;
+  letter-spacing: 0.002em;
+  color: #3D3D3D;
+}
+
+/* checkBox */
+
+.wrapperSmsScheduller .shceduller .run .checkboxscheduller {
+  display: flex;
+}
+
+/* radio box */
+.radioBox {
+  display: flex;
+  margin-top: 20px;
+  align-items: center;
+}
+
+/* The container */
+
+.radioBox .container {
+  display: block;
+  position: relative;
+  padding-left: 35px;
+  cursor: pointer;
+  font-size: 14px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+/* Hide the browser's default radio button */
+
+.radioBox .container input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+}
+
+/* Create a custom radio button */
+
+.checkmark {
+  position: absolute;
+  /* top: 5px; */
+  left: 0;
+  height: 16px;
+  width: 16px;
+  /* background-color: #eee; */
+  border: 1px solid #4F5154;
+  border-radius: 50%;
+}
+
+/* On mouse-over, add a grey background color */
+
+.radioBox .container:hover input~.checkmark {
+  background-color: #ccc;
+}
+
+/* When the radio button is checked, add a blue background */
+
+.radioBox .container input:checked~.checkmark {
+  background-color: #E81255;
+}
+
+/* Create the indicator (the dot/circle - hidden when not checked) */
+
+.checkmark:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+
+/* Show the indicator (dot/circle) when checked */
+
+.radioBox .container input:checked~.checkmark:after {
+  display: block;
+}
+
+/* Style the indicator (dot/circle) */
+
+.radioBox .container .checkmark:after {
+  top: 4px;
+  left: 4px;
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background: white;
+}
+
+/* radio time */
+
+.radioBox .spanClass {
+  display: flex;
+  align-items: center;
+  margin: 0 10px;
+  justify-content: center;
+}
+.radioBox .spanClass.nomargin {
+  margin: 0;
+}
+
+.radioBox .spanClass .costumeNumber {
+  height: 24px;
+  width: 66px;
+  border-radius: 3px;
+  justify-content: center;
+  position: relative;
+  font-size: 14px;
+  margin: 0 10px
+}
+.radioBox .spanClass .costumeNumber.disabled input {
+  background-color: #E5E5E5;
+  color: #979797;;
+}
+.radioBox .spanClass .costumeNumber.disabled span {
+  background-color: #E5E5E5;
+  color: #979797;;
+}
+.radioBox .spanClass .costumeNumber.intervals input {
+ text-align: center;
+}
+
+.radioBox .spanClass .costumeNumber span {
+  position: absolute;
+  right: 30%;
+  top: 15%;
+  z-index: 2;
+}
+
+.radioBox span .costumeNumber input[type="number"] {
+  height: 100%;
+  width: 100%;
+  border: none;
+  outline: none;
+  padding-left: 10%;
+  border: 1px solid #4F5154;
+  border-radius: 3px;
+}
+
+/* buttonSave */
+.wrapperSmsScheduller .buttonSave{
+  margin-top: 7%;
+  margin-bottom: 7%;
+  width: 72%;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.wrapperSmsScheduller .buttonSave .buttonSavebantuan {
+  width: 23%;
+}
+
 @media screen and (max-width: 756px) {
   .wrapperSmsScheduller {
     margin-right: 44px;
   }
+  .wrapperSmsScheduller .shceduller {
+    width: 100%;
+  }
+  .wrapperSmsScheduller .shceduller .run {
+    flex-direction: column;
+    width: 100%;
+  }
+  .wrapperSmsScheduller .shceduller .run .checkboxscheduller {
+    flex-wrap: wrap;
+    margin-top: 2%;
+    /* width: 60%; */
+    height: 50px;
+  }
+  .wrapperSmsScheduller .shceduller .run .radioBox.wrapperIntervals {
+    flex-wrap: wrap;
+  }
+  .radioBox .spanClass {
+    margin: 0;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    height: 40px;
+  }
+   
 }

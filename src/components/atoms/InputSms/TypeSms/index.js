@@ -9,20 +9,16 @@ www.ocatelkom.co.id`
   );
   console.log("mar", text);
   return (
-    <div>
+    <div className="wrapperTypeSms">
       <p className="titleInputSms">{title}</p>
       <div className="TypeSms">
-        {/* <input
-          type="text"
-          placeholder="name of your broadcast"
-          color="#DEDEDE"
-        /> */}
         <textarea
           placeholder="name of your broadcast"
           value={text}
           onChange={(e) => setText(e.target.value)}
         />
       </div>
+        <p className="CaracterTypeSms">Character {text.length}/1024</p>
     </div>
   );
 };
