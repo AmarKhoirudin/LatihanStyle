@@ -11,7 +11,7 @@ const AuthPage = () => {
         <div style={{ flex: 15 }}>
           <SideBar />
         </div>
-        <div>
+        <div style={{ flex: 85 }}>
           <NavBar />
           <Route exact path="/" component={HomePage} />
           <Route path="/smsscheduller" component={SmsSchedullerPage} />
