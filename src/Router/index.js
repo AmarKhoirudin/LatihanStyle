@@ -2,15 +2,16 @@ import React from "react";
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 import { HomePage, LoginPage, SmsSchedullerPage } from "../pages";
 import { NavBar, SideBar } from "../components/molekul";
+import "./index.css";
 
 const AuthPage = () => {
   return (
     <Router>
-      <div style={{ display: "flex" }}>
+      <div className="wrapperRouterAuth">
         <div style={{ flex: 15 }}>
           <SideBar />
         </div>
-        <div style={{ flex: 85 }}>
+        <div>
           <NavBar />
           <Route exact path="/" component={HomePage} />
           <Route path="/smsscheduller" component={SmsSchedullerPage} />

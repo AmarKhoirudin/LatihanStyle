@@ -23,6 +23,7 @@
     font-size: 14px;
     font-family: "Lato-Italic";
     color: #4F5154;
+    width: 100%;
 }
 
 .wrapperNavbar .navBarRight {
@@ -50,4 +51,18 @@
 
 .wrapperNavbar .navBarRight img {
     margin-left: 13px;
+}
+
+@media screen and (max-width :756px) {
+    .wrapperNavbar {
+        flex-direction: column;
+        /* margin-top: 0; */
+        margin-right: 44px;
+    }
+    .wrapperNavbar .navBarLeft {
+        margin-top: 5%;
+        width: 100%;
+        box-sizing: border-box;
+        order: 2;
+    }
 }
