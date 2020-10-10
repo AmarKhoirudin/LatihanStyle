@@ -1,45 +1,155 @@
 .wrapperSideBar {
-    background-color: #ED1260;
-    height: 100%;
-    min-height: 100vh;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding-left: 32px;
-    padding-right: 32px;
-    /* width: 13%; */
-    position: relative;
+  background-color: #ed1260;
+  height: 100%;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-left: 32px;
+  padding-right: 32px;
+  /* width: 13%; */
+  position: relative;
 }
 
 .SideBarLogo {
-    max-width: 183px;
-    max-height: 34px;
-    margin-top: 53px;
+  max-width: 183px;
+  max-height: 34px;
+  margin-top: 53px;
 }
 
 .wrapperNavlink {
-    width: 100%;
-    margin-top: 30%;
+  width: 100%;
+  margin-top: 30%;
 }
 
 .Navlink {
-    display: flex;
-    color: white;
+  display: flex;
+  color: white;
 }
 .Navlink.dropdown {
-    justify-content: space-between;
+  justify-content: space-between;
 }
 
 a.Navlink {
-    text-decoration: none;
+  text-decoration: none;
 }
 
 .textNavlink {
-    margin-left: 5px;
-    font-family: "Lato-Medium";
-    font-size: 14;
+  margin-left: 5px;
+  font-family: "Lato-Medium";
+  font-size: 14;
 }
 
-.wrapperSideBar .fixed {
-    /* position: fixed; */
+.Navlink.active {
+    border-bottom:  3px solid white;
+    border-radius: 2px;
+}
+
+.SmsDropdown {
+    display: flex;
+    /* justify-content: center; */
+    margin-left: 5%;
+    align-items: center;
+}
+
+.SmsDropdown img {
+    margin-top: -15%;
+}
+
+
+/* Hamburger menu */
+
+.menu-toogle {
+  display: none;
+  flex-direction: column;
+  height: 20px;
+  justify-content: space-between;
+  position: relative;
+  margin-top: 10px;
+  margin-left: 10px;
+}
+
+.menu-toogle span {
+  display: block;
+  width: 28px;
+  height: 3px;
+  background-color: rgb(241, 134, 241);
+  transition: all .5s;
+}
+
+.menu-toogle input {
+  position: absolute;
+  width: 40px;
+  height: 28px;
+  left: -5px;
+  top: -3px;
+  opacity: 0;
+  cursor: pointer;
+  z-index: 2;
+}
+
+.menu-toogle span:nth-child(2) {
+  transform-origin: 0 0;
+  z-index: 2;
+}
+
+.menu-toogle span:nth-child(4) {
+  transform-origin: 0 100%;
+  z-index: 2;
+}
+
+.menu-toogle input:checked~span:nth-child(2) {
+  background-color: white;
+  transform: rotate(45deg) translate(-1px, -1px);
+  z-index: 2;
+}
+
+.menu-toogle input:checked~span:nth-child(4) {
+  background-color: white;
+  transform: rotate(-45deg) translate(-1px, 0);
+  z-index: 2;
+}
+
+.menu-toogle input:checked~span:nth-child(3) {
+  opacity: 0;
+  transform: scale(0);
+}
+
+/* Responsive */
+
+/* Ukuran Mobile */
+
+@media screen and (max-width: 576px) {
+  .menu-toogle {
+      display: flex;
+  }
+
+  .wrapperSideBar {
+      position: absolute;
+      flex-direction: column;
+      /* right: 0; */
+      top: 0px;
+      /* width: 80%; */
+      /* height: 100vh; */
+      text-align: center;
+      /* justify-content: space-evenly; */
+      /* background-color: rgb(180, 47, 180); */
+      z-index: -1;
+      transform: translateX(-100%);
+      transition: all 1s;
+      opacity: 0;
+  }
+
+  .wrapperSideBar.show {
+      transform: translateX(0%);
+      opacity: 1;
+      z-index: 1;
+  }
+}
+
+@media screen and (max-width: 756px) {
+  .wrapperSideBar {
+    position: fixed;
+
+  }
 }

@@ -31,11 +31,11 @@ const HomePage = () => {
           <p className="TableTitle">Recent BLAST</p>
           <div style={{ display: "flex" }}>
             <div className="TitleRight">
-              <img src={SortIcon} width={12} height={12} />
+              <img src={SortIcon} width={12} height={12} alt="imageTable" />
               <p className="TableSort">Sort</p>
             </div>
             <div className="TitleRight">
-              <img src={VectorIcon} width={12} height={12} />
+              <img src={VectorIcon} width={12} height={12} alt="imageTable" />
               <p className="TableSort">Filter</p>
             </div>
           </div>

@@ -1,0 +1,59 @@
+.titleInputSms {
+  font-family: "Lato";
+  font-style: normal;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 148x;
+  letter-spacing: 0.002em;
+  color: #4f5154;
+}
+
+.wrapperInputSms {
+  border: 1px solid #bbc1c8;
+  width: 27%;
+  padding: 15px;
+  border-radius: 4px;
+  margin-bottom: 2%;
+  box-sizing: border-box;
+}
+
+.wrapperInputSms input {
+  width: 100%;
+  border: none;
+  outline: none;
+  font-size: 14px;
+  font-family: "Lato";
+  font-style: italic;
+  font-weight: normal;
+  color: #4f5154;
+}
+.wrapperInputSms input::placeholder {
+  color: #dedede;
+}
+
+/* type */
+.wrapperInputType {
+  border: 1px solid #bbc1c8;
+  width: 27%;
+  padding: 5px 15px 5px 15px;
+  border-radius: 4px;
+  margin-bottom: 2%;
+  box-sizing: border-box;
+  display: flex;
+  align-items: center;
+}
+.wrapperInputType p {
+  width: 100%;
+  border: none;
+  outline: none;
+  font-size: 14px;
+  font-family: "Lato";
+  font-style: italic;
+  font-weight: normal;
+  color: #dedede;
+}
+
+.wrapperInputType img {
+    width: 15px;
+    height: 10px;
+}
